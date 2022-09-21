@@ -1,0 +1,8 @@
+{% if include.recipe.eta %}
+        {% if include.recipe.eta.preparation and include.recipe.eta.cooking %}
+            {% assign sep = "," %}
+        {% else %}
+            {% assign sep = "" %}
+        {% endif %}
+    <i class="ri-time-line"></i> {% if include.recipe.eta.preparation %}<strong>Preparazione:</strong> {{ include.recipe.eta.preparation }}{% endif %}{{ sep }} {% if include.recipe.eta.cooking %}<strong>Cottura:</strong> {{ include.recipe.eta.cooking }}{% endif %}
+{% endif %}

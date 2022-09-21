@@ -1,0 +1,8 @@
+<span class="tags"><strong>Categorie:</strong>
+  {% for tag in include.categories %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      {% assign tag_page = site.pages | where: "layout", "category" | where: "tag", tag_name | first %}
+      <a href="/categoria/{{ tag_name }}" class="tag">{{ tag_page.title }}</a>
+  {% endfor %}
+</span>
+

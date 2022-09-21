@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<article class="post">
+    {% include categories.html categories=page.tags %}
+
+    <h1>{{ page.title }}</h1>
+
+    <div class="eta">
+        {% include recipe_eta.html recipe=page %}
+    </div>
+
+    <div class="requirements-row flex-row">
+        <div class="ingredients flex-col">
+            <!-- {{ page.ingredients | jsonify }} -->
+            {% for ingredient_group_dict in page.ingredients %}
+                {% for ingredient_group in ingredient_group_dict %}
+                    {% unless ingredient_group[0] == "base" %}
+                        <h3>{{ ingredient_group[0] }}</h3>
+                    {% endunless %}
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Ingredienti</th>
+                            <th>Quantità</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for ingredient in ingredient_group[1] %}
+                            <tr>
+                                <td>{{ ingredient[0] }}</td>
+                                <td>{{ ingredient[1] }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <div class="tools flex-col">
+            <table>
+                <thead>
+                <tr>
+                    <th>Attrezzatura</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% assign sorted_tools = page.tools | sort_natural %}
+                {% for tool in sorted_tools %}
+                    <tr>
+                        <td>{{ tool }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="entry">
+        {{ content }}
+    </div>
+
+    {% include utterances.html %}
+</article>

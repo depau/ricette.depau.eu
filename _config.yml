@@ -1,0 +1,54 @@
+title: Le ricette di Davide
+tagline: Le mie ricette
+url: "https://ricette.depau.eu"
+baseurl: ""
+
+author: Davide Depau
+
+markdown: kramdown
+highlighter: rouge
+
+tracking_id: #
+
+permalink: pretty
+
+footer: yes
+footer_url: "https://github.com/Depau/ricette.depau.eu"
+footer_text: "Codice sorgente su GitHub"
+
+excerpt_separator: <!--more-->
+
+cookies: yes
+cookies_url: "https://depau.eu/cookies"
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  ricette:
+    output: true
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+  hard_wrap: true
+  extensions: fenced_code_blocks
+
+nav:
+ - name: "<i class=\"ri-home-line\"></i> depau.eu"
+   link: "https://depau.eu"

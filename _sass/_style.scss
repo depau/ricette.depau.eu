@@ -1,0 +1,371 @@
+@import "vars";
+@import "rouge_monokai";
+@import "opendyslexic";
+
+$font: "Noticia Text", "Liberation Serif", "Times New Roman", serif;
+$heading_font: $font;
+
+.opendyslexic:not(.forceregular) {
+  font-family: "Open Dyslexic", $font !important;
+
+  .navbar {
+    font-family: "Open Dyslexic", $font !important;
+  }
+
+  code,
+  pre {
+    font-family: "Open Dyslexic Mono", $font !important;
+  }
+
+  .forceregular {
+    font-family: $font !important;
+  }
+}
+
+/*
+ * Basic
+ */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  height: 100%;
+  line-height: 130%;
+}
+
+a {
+  text-decoration: none;
+  color: $accent;
+}
+
+
+a:hover {
+  border-bottom: solid 2px;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+:not(pre) > code {
+  background: $code-bg;
+  border-radius: 5px;
+  padding: 0 5px;
+  border: solid 1px $code-border;
+  color: $code-inline-fg;
+  font-family: $font;
+
+  a & {
+    color: $accent;
+    border: solid 1px $code-link-border;
+  }
+}
+
+
+div.highlight {
+  font-size: 15px;
+  background-color: $code-block-bg;
+  border-radius: 5px;
+  border: solid 1px $code-border;
+  color: white;
+  font-family: $font;
+  margin: 10px 0;
+  padding: 10px 10px 0;
+
+  a & {
+    color: $accent;
+    border: solid 1px $code-link-border;
+  }
+
+  pre.highlight {
+    margin: 0;
+    background-color: initial;
+    //noinspection CssOverwrittenProperties
+    overflow-x: scroll;
+    //noinspection CssInvalidPropertyValue,CssOverwrittenProperties
+    overflow-x: overlay;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #b7b7b79e;
+      border-radius: 7px
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(58, 58, 58, 0.10)
+    }
+  }
+}
+
+.wrap-code div.highlight pre.highlight,
+:not(pre) > code {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  //noinspection CssInvalidPropertyValue
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+
+  overflow-x: initial;
+}
+
+.wrap-code div.highlight {
+  padding-bottom: 10px;
+}
+
+.join-code-blocks {
+
+  // Select first joined block of sequence
+  &:not(.join-code-blocks + .join-code-blocks) > div.highlight {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+  }
+
+  // Select all other joined blocks
+  & + .join-code-blocks > div.highlight {
+    margin-top: 0;
+    padding-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*
+ * Flex
+ */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .flex-col {
+    flex: 1 1 0;
+  }
+
+  @media (max-width: 650px) {
+    .flex-col {
+      min-width: 100%;
+    }
+  }
+}
+
+
+/*
+ * Navbar
+ */
+
+#author-name {
+  font-size: 30px;
+  color: #272727;
+  display: inline-block;
+
+  &:hover {
+    border-bottom: solid 2px;
+    padding-bottom: 4px;
+    margin-bottom: -6px;
+  }
+}
+
+.navbar {
+  padding: 50px 0 50px 0;
+  font-family: $heading_font;
+}
+
+.navbar-ul {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0 5px 0 10px;
+
+  a {
+    position: relative;
+  }
+
+  a:hover i {
+    top: -1px;
+  }
+
+  &:not(.opendyslexic) a:not(a.forceregular) {
+    top: -3px;
+  }
+
+  a.forceregular {
+    top: -1px;
+  }
+}
+
+.alignable {
+  display: inline-block;
+}
+
+.pull-left {
+  @extend .alignable;
+  float: left;
+}
+
+.pull-right {
+  @extend .alignable;
+  float: right;
+}
+
+/* Divs */
+
+.container {
+  max-width: $max-width;
+  margin: auto;
+  transition: 0.3s ease all;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+/* Institute Image */
+
+#ins-logo {
+  margin: auto;
+  display: block;
+  max-height: 100px;
+  text-align: center;
+}
+
+.utterances {
+  max-width: initial;
+  margin-top: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .container {
+    max-width: $med-width;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 83%;
+  }
+
+  .navbar-ul {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+  }
+
+  #author-name {
+    width: 100%;
+    float: none;
+  }
+
+  #navlist {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #navlist li.alignable {
+    display: inline-block;
+  }
+
+  #navlist li.pull-left {
+    float: none;
+  }
+
+  #navlist li.nav-list {
+    margin: 0;
+  }
+}
+
+div.cc-window {
+  font-family: $font;
+}
+
+.navbar [class^="remixicon-"]::before {
+  vertical-align: bottom;
+}
+
+h1 {
+
+  [class^="remixicon-"],
+  [class*=" remixicon-"] {
+    font-size: 24px;
+  }
+}
+
+.content .list-item {
+  padding: 20px 0;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  }
+
+  div {
+    line-height: 150%;
+  }
+
+  h1 {
+    margin: 10px 0;
+  }
+}
+
+.ingredients table {
+  width: 100%;
+}
+
+.content .ingredients-short ul {
+  padding: 0;
+  display: inline;
+
+  > li {
+    display: inline;
+
+    &:not(:first-child):before {
+      content: ", ";
+    }
+  }
+}
+
+@import "typography";
+@import "tables";
