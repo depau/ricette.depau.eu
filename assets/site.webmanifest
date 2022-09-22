@@ -1,20 +1,19 @@
 {
-    "name": "Davide Depau's Blog",
-    "short_name": "Davide Depau's Blog",
+    "name": "Le ricette di Davide",
+    "short_name": "Le ricette di Davide",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=PYqRARrNMy",
+            "src": "/assets/android-chrome-192x192.png?v=w8p9grwj",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=PYqRARrNMy",
+            "src": "/assets/android-chrome-512x512.png?v=w8p9grwj",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ff0f00",
-    "background_color": "#ff0f00",
-    "start_url": "https://blog.depau.eu",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
