@@ -316,6 +316,10 @@ div.highlight {
   #navlist li.nav-list {
     margin: 0;
   }
+
+  #opendyslexic-toggle {
+    bottom: 2px;
+  }
 }
 
 div.cc-window {
@@ -365,6 +369,11 @@ h1 {
       content: ", ";
     }
   }
+}
+
+#author-name .ri-restaurant-line {
+  top: 2px;
+  padding-right: 5px;
 }
 
 @import "typography";

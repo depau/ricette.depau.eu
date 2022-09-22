@@ -27,96 +27,105 @@
     <link href="/assets/css/remixicon/remixicon.css?v={{ site.v }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml"/>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.v }}">
 
-    {% seo title=false %}
+    {% seo title = false %}
 
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000000",
-      "text": "#ffffff"
-    },
-    "button": {
-      "background": "#ff0f00",
-      "text": "#ffffff"
-    }
-  },
-  "theme": "edgeless",
-  "position": "bottom-right",
-  "content": {
-    "message": "Questo sito utilizza i cookies per analisi del traffico anonimizzata."
-    "link": "Cookie policy and opt-out",
-    "href": "https://depau.eu/cookies"
-  }
-})});
-</script>
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#ff0f00",
+                        "text": "#ffffff"
+                    }
+                },
+                "theme": "edgeless",
+                "position": "bottom-right",
+                "content": {
+                    "message": "Questo sito utilizza i cookies per analisi del traffico anonimizzata."
+                    "link": "Cookie policy and opt-out",
+                    "href": "https://depau.eu/cookies"
+                }
+            })
+        });
+    </script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="navbar container">
-            {% if site.ins_logo %}
-                <img id="ins-logo" src="{{ site.ins_logo }}" />
-            {% endif %}
-            <a id="author-name" class="alignable pull-left" href="/">{{ site.title }}</a>
-            <ul id="navlist" class="alignable pull-right navbar-ul">
-                {% for x in site.nav %}
-                    {% if x.name == "Resume" %}
-                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
-                    {% else %}
-                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
-                    {% endif %}
-                        /
-                        </li>
-                {% endfor %}
-                <li class="alignable pull-left nav-list opendyslexic"><a href="#" id="opendyslexic-toggle" title="Toggle the dyslexic-friendly font">Dislessicə?</a>
-            </ul>
-        </div>
-        <div style="clear:both"></div>
-        <hr>
-        {% if page.is_contact == true %}
-            <div class="container content contact">
-        {% else %}
-            <div class="container content">
+<div class="wrapper">
+    <div class="navbar container">
+        {% if site.ins_logo %}
+            <img id="ins-logo" src="{{ site.ins_logo }}"/>
         {% endif %}
-                {{ content }}
-                {% if site.footer == true %}
-                    <hr />
-                    <p style="text-align: center; margin-bottom: 10px">
+        <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}/"><i class="ri-restaurant-line"></i> {{ site.title }}</a>
+        <ul id="navlist" class="alignable pull-right navbar-ul">
+            {% for x in site.nav %}
+                {% if x.name == "Resume" %}
+                    <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                {% else %}
+                    <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                {% endif %}
+                /
+                </li>
+            {% endfor %}
+            <li class="alignable pull-left nav-list opendyslexic"><a href="#" id="opendyslexic-toggle"
+                                                                     title="Toggle the dyslexic-friendly font">Dislessicə?</a>
+        </ul>
+    </div>
+    <div style="clear:both"></div>
+    <hr>
+    {% if page.is_contact == true %}
+    <div class="container content contact">
+        {% else %}
+        <div class="container content">
+            {% endif %}
+            {{ content }}
+            {% if site.footer == true %}
+                <hr/>
+                <p style="text-align: center; margin-bottom: 10px">
                     <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
                     {% if site.cookies == true %}
                         &bullet;
                         <a href="{{ site.cookies_url }}" style="color: black"><small>Cookies</small></a>
                     {% endif %}
-                    </p>
-                {% endif %}
-            </div>
+                </p>
+            {% endif %}
+        </div>
     </div>
 
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://analytics.depau.eu/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="https://analytics.depau.eu/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/opendyslexic.js?v={{ site.v }}"></script>
-<!-- End Matomo Code -->
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://analytics.depau.eu/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript><p><img src="https://analytics.depau.eu/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt=""/></p>
+    </noscript>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/opendyslexic.js?v={{ site.v }}"></script>
+    <!-- End Matomo Code -->
 
 </body>
 <footer>
