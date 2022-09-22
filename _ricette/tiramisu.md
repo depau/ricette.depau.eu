@@ -17,6 +17,7 @@ ingredients:
   - Decorazione:
       "Cacao amaro in polvere": q.b.
 tools:
+  - Due ciotole
   - Bilancia
   - Fruste elettriche
   - Posate

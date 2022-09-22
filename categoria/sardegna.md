@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Sardegna"
+title: "Cucina sarda"
 tag: sardegna
 ---
 
