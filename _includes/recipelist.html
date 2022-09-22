@@ -5,6 +5,9 @@
             {% include recipe_eta.html recipe=recipe %}
         </div>
         <div>
+            <i class="ri-scales-2-line"></i> {{ recipe.amounts_for }}
+        </div>
+        <div>
             {% include categories.html categories=recipe.tags %}
         </div>
 
