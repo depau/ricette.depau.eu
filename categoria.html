@@ -7,7 +7,7 @@ title: Categorie
 
 {% assign sortedtags = site.pages | where: "layout", "category" | sort: "title" %}
 {% for tag in sortedtags %}
-  <h2><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/tag/{{ tag.tag }}">{{ tag.title }}</a></h2>
+  <h2><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/{{ tag.tag }}">{{ tag.title }}</a></h2>
   <ul>
     {% assign category_posts = site.ricette | where: "tags", tag.tag | sort: "title" %}
     {% for post in category_posts %}

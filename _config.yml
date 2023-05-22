@@ -50,5 +50,7 @@ kramdown:
   extensions: fenced_code_blocks
 
 nav:
+ - name: "Categorie"
+   link: "/categoria/"
  - name: "<i class=\"ri-home-line\"></i> depau.eu"
    link: "https://depau.eu"
