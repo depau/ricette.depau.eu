@@ -2,7 +2,7 @@
 layout: recipe
 title: "Liquore al cioccolato"
 tags:
-  - liquore
+  - liquori
 eta:
   preparation: 30m
   cooking: null
