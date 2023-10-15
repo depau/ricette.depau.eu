@@ -21,6 +21,8 @@ tools:
   - Forno
   - Tagliere
   - Coltello
+  - Carta forno
+  - Vassoi
 ---
 
 ## Preparazione
