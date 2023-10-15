@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: Ravioli cinesi
+title: Ravioli cinesi (plant-based)
 tags:
   - asia
 eta:
