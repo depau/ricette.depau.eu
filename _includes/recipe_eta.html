@@ -19,8 +19,8 @@
     <i class="ri-time-line"></i>
     {% for component in components %}
         {{ component }}
-        {% if forloop.last == false %}
+        {%- unless forloop.last -%}
             ,
-        {% endif %}
+        {% endunless %}
     {% endfor %}
 {% endif %}
