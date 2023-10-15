@@ -73,5 +73,6 @@ fare a casa.
 
 ### Note
 
-Come carne macinata finta si può usare "Beyond mince", che si trova nel reparto surgelati all'Esselunga e va scongelato,
-oppure dei burger plant-based di imitazione spappolandoli. Vengono buoni in entrambi i casi.
+- I tempi e le quantità sono un po' vaghi perché è da tanto che non li preparo.
+- Come carne macinata finta si può usare "Beyond mince", che si trova nel reparto surgelati all'Esselunga e va
+  scongelato, oppure dei burger plant-based di imitazione spappolandoli. Vengono buoni in entrambi i casi.
