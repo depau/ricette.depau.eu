@@ -70,8 +70,8 @@
         <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}/"><i class="ri-restaurant-line"></i> {{ site.title }}</a>
         <ul id="navlist" class="alignable pull-right navbar-ul">
             {% for x in site.nav %}
-                {% if x.name == "Resume" %}
-                    <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                {% if x.name == "Categorie" %}
+                    <li class="alignable pull-left nav-list fix-damn-position"><a href="{{ x.link }}">{{ x.name }}</a>
                 {% else %}
                     <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
                 {% endif %}

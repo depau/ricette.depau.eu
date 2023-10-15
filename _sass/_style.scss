@@ -391,5 +391,12 @@ h1 {
   font-size: 13.3px;
 }
 
+@media (min-width: 500px) {
+  .fix-damn-position {
+    position: relative;
+    top: 1px;
+  }
+}
+
 @import "typography";
 @import "tables";
