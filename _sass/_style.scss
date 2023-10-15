@@ -376,5 +376,20 @@ h1 {
   padding-right: 5px;
 }
 
+#site-description {
+  text-align: center;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+.plant-based {
+  color: green;
+}
+
+.footer-link {
+  color: black;
+  font-size: 13.3px;
+}
+
 @import "typography";
 @import "tables";
