@@ -46,7 +46,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
-  hard_wrap: true
+  hard_wrap: false
   extensions: fenced_code_blocks
 
 nav:
