@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: Ravioli cinesi (plant-based)
+title: Ravioli cinesi di carne (finta)
 tags:
   - asia
 eta:
