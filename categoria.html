@@ -3,7 +3,7 @@ layout: default
 title: Categorie
 ---
 
-<h1>Tutte le categorie</h1>
+<h1 class="title">Tutte le categorie</h1>
 
 {% assign sortedtags = site.pages | where: "layout", "category" | sort: "title" %}
 {% for tag in sortedtags %}
