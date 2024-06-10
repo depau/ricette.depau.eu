@@ -32,8 +32,8 @@ layout: default
                         <tbody>
                         {% for ingredient in ingredient_group[1] %}
                             <tr>
-                                <td>{{ ingredient[0] }}</td>
-                                <td>{{ ingredient[1] }}</td>
+                                <td>{{ ingredient[0] | markdownify }}</td>
+                                <td>{{ ingredient[1]| markdownify }}</td>
                             </tr>
                         {% endfor %}
                         </tbody>
