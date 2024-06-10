@@ -29,6 +29,10 @@ tools:
   - Pellicola trasparente
 ---
 
+I culurgiones sono un piatto della tradizione sarda, simili ai ravioli, ma con un ripieno di patate e formaggi.
+
+Questa è una versione vegana che ha lo stesso sapore di quella tradizionale.
+
 ### \* Note sugli ingredienti
 
 - Provola vegana: si può usare un qualsiasi formaggio vegano a base di olio di cocco, ad esempio quello della Lidl.
@@ -77,8 +81,8 @@ Alcune persone aggiungono anche della menta tritata. Io li preferisco senza.
 
 2. Con una formina tonda da 8cm o un bicchiere, tagliare dei dischi di sfoglia.
 3. Mettere un cucchiaino di ripieno al centro di ogni disco.
-4. Guardare un video su YouTube per imparare a chiudere i culurgiones; in alternativa, piegare il disco a metà e
-   chiudere i bordi con una forchetta.
+4. Guardare [un video su YouTube](https://www.youtube.com/watch?v=OLJhLi5i160) per imparare a chiudere i culurgiones; in
+   alternativa, piegare il disco a metà e chiudere i bordi con una forchetta.
 5. Posare i culurgiones su un vassoio infarinato e coprirli con un canovaccio asciutto. Non lasciarli a contatto tra
    loro, o potrebbero attaccarsi.
 
