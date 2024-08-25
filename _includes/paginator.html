@@ -1,0 +1,35 @@
+<p class="text-center paginator">
+  {% if paginator.total_pages > 1 %}
+    {% if paginator.page_trail %}
+
+      {% if paginator.page > 1 %}
+        <a href="{{ paginator.first_page_path | prepend: site.baseurl }}"
+           title="Prima pagina">«</a> |
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+           title="Pagina precedente">‹</a> |
+      {% endif %}
+      {% for trail in paginator.page_trail %}
+        <a {% if page.url == trail.path %}class="selected"{% endif %} href="{{ trail.path | prepend: site.baseurl }}"
+           title="{{ trail.title }}">{{ trail.num }}</a> {% unless forloop.last %}|{% endunless %}
+      {% endfor %}
+      {% if paginator.page < paginator.last_page %}
+        |
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+           title="Pagina successiva">›</a> |
+        <a href="{{ paginator.last_page_path | prepend: site.baseurl }}"
+           title="Ultima pagina">»</a>
+      {% endif %}
+
+    {% else %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Pagina precedente</a>
+      {% endif %}
+      {% if paginator.previous_page and paginator.next_page %}
+        &bullet;
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Pagina successiva</a>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</p>

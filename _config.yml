@@ -29,6 +29,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate-v2
 
 exclude:
   - Gemfile
@@ -52,7 +53,18 @@ kramdown:
   extensions: fenced_code_blocks
 
 nav:
- - name: "Categorie"
-   link: "/categoria/"
- - name: "<i class=\"ri-home-line\"></i> depau.eu"
-   link: "https://depau.eu"
+  - name: "Categorie"
+    link: "/categoria/"
+  - name: "<i class=\"ri-home-line\"></i> depau.eu"
+    link: "https://depau.eu"
+
+pagination:
+  enabled: true
+  per_page: 10
+  collection: ricette
+  permalink: "/page/:num/"
+  title: ":title - pagina :num"
+  sort_field: "title"
+  trail:
+    before: 2
+    after: 2

@@ -19,6 +19,9 @@ title: Categorie
   <ul>
   {% endunless %}
   {% for tag in sortedtags %}
+    {% if tag.pagination_info.curr_page != 1 %}
+      {% continue %}
+    {% endif %}
     <{{ htag }}><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/{{ tag.tag }}">{{ tag.title }}</a></{{ htag }}>
     {% if site.recipes_under_categories %}
     <ul>

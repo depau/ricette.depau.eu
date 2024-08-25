@@ -1,5 +1,8 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  collection: ricette
 ---
 
 <div class="posts">
@@ -15,7 +18,8 @@ layout: default
         </p>
     </section>
 
-    {% include recipelist.html recipes=site.ricette %}
+    {% include recipelist.html recipes=paginator.posts %}
+    {% include paginator.html %}
 
     <p class="text-center"><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/">Tutte le
         categorie</a></p>
