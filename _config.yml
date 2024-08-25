@@ -41,6 +41,8 @@ collections:
   ricette:
     output: true
 
+recipes_under_categories: true
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
