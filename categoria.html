@@ -5,13 +5,17 @@ title: Categorie
 
 <h1 class="title">Tutte le categorie</h1>
 
-{% assign sortedtags = site.pages | where: "layout", "category" | sort: "title" %}
-{% for tag in sortedtags %}
-  <h2><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/{{ tag.tag }}">{{ tag.title }}</a></h2>
-  <ul>
-    {% assign category_posts = site.ricette | where: "tags", tag.tag | sort: "title" %}
-    {% for post in category_posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% assign sortedgroups = site.pages | where: "layout", "category" | map: "group" | uniq | sort %}
+{% for group in sortedgroups %}
+  <h2><i class="remixicon-price-tag-3-line"></i> {{ group }}</h2>
+  {% assign sortedtags = site.pages | where: "layout", "category" | where: "group", group | sort: "title" %}
+  {% for tag in sortedtags %}
+    <h3><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/{{ tag.tag }}">{{ tag.title }}</a></h3>
+    <ul>
+      {% assign category_posts = site.ricette | where: "tags", tag.tag | sort: "title" %}
+      {% for post in category_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
 {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: category
 title: "Liquori"
-tag: liquori
+group: Tipo
 ---
 
