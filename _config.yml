@@ -13,7 +13,7 @@ tracking_id: #
 permalink: pretty
 
 footer: yes
-footer_url: "https://github.com/Depau/ricette.depau.eu"
+footer_url: "https://github.com/depau/ricette.depau.eu"
 footer_text: "Codice sorgente su GitHub"
 
 excerpt_separator: <!--more-->

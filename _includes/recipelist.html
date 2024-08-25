@@ -17,7 +17,7 @@
                 {% for ingredient_group_dict in recipe.ingredients -%}
                     {% for ingredient_group in ingredient_group_dict -%}
                         {% for ingredient in ingredient_group[1] -%}
-                            <li>{{ ingredient[0] }}</li>
+                            <li>{{ ingredient.name }}</li>
                         {%- endfor %}
                     {%- endfor %}
                 {%- endfor %}

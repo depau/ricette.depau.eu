@@ -10,14 +10,27 @@ eta:
 amounts_for: "Una persona affamata"
 ingredients:
   - base:
-      "Riso per risotti": 120g
-      "Dado vegetale": 1
-      "Acqua": 700ml
-      "Peperoni": mezzo
-      "Misto per soffritto": due cucchiai
-      "Burro vegano": un cucchiaio
-      "Formaggio grattugiato vegano": due o tre cucchiai
-      "Olio d'oliva": un filo
+    - name: "Riso per risotti"
+      amount: 120
+      unit: g
+    - name: "Dado vegetale"
+      qty: 1
+    - name: "Acqua"
+      amount: 700
+      unit: ml
+    - name: "Peperoni"
+      qty: 0.5
+    - name: "Misto per soffritto"
+      amount: 2
+      unit: cucchiai
+    - name: "Burro vegano"
+      amount: 1
+      unit: cucchiaio
+    - name: "Formaggio grattugiato vegano"
+      amount: 3
+      unit: cucchiai
+    - name: "Olio d'oliva"
+      approx_qty: un filo
 tools:
   - Pentola media antiaderente
   - Mestolo in legno

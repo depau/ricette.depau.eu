@@ -9,19 +9,48 @@ eta:
 amounts_for: "5-6 persone"
 ingredients:
   - base:
-      "Patate o fiocchi": 1kg
-      "Provola vegana*": 200g
-      "Parmigiano vegano*": 200g
-      "Pecorino vegano*": 200g
-      "Feta vegana*": 200g
-      "Olio d'oliva": ~100ml (q.b.)
-      "Aglio": 1 spicchio
-      "Sale": mezzo cucchiaino (q.b.)
-  - "Sfoglia":
-      "Farina calibrata": 600g
-      "Olio d'oliva": ~3 cucchiai
-      "Sale": 10g
-      "Acqua": q.b.
+    - name: "Patate o fiocchi"
+      amount: 1
+      unit: kg
+    - name: "Provola vegana"
+      amount: 200
+      unit: g
+      notes: "(vedi note)"
+    - name: "Parmigiano vegano"
+      amount: 200
+      unit: g
+      notes: "(vedi note)"
+    - name: "Pecorino vegano"
+      amount: 200
+      unit: g
+      notes: "(vedi note)"
+    - name: "Feta vegana"
+      amount: 200
+      unit: g
+      notes: "(vedi note)"
+    - name: "Olio d'oliva"
+      amount: "100"
+      unit: ml
+      approx_qty: circa
+    - name: "Aglio"
+      amount: 1
+      unit: spicchio
+    - name: "Sale"
+      amount: 0.5
+      unit: cucchiaino
+      approx_qty: (q.b.)
+  - Sfoglia:
+    - name: "Farina calibrata"
+      amount: 600
+      unit: g
+    - name: "Olio d'oliva"
+      amount: 3
+      unit: cucchiai
+      approx_qty: circa
+    - name: "Sale"
+      amount: 10
+      unit: g
+    - name: "Acqua"
 tools:
   - Ciotola grande
   - Grattugia con fori grossi e piccoli
@@ -33,7 +62,7 @@ I culurgiones sono un piatto della tradizione sarda, simili ai ravioli, ma con u
 
 Questa è una versione vegana che ha lo stesso sapore di quella tradizionale.
 
-### \* Note sugli ingredienti
+### Note sugli ingredienti
 
 - Provola vegana: si può usare un qualsiasi formaggio vegano a base di olio di cocco, ad esempio quello della Lidl.
 - Parmigiano vegano: si può usare il Gondino o il Grattì.

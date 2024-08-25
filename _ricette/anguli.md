@@ -9,13 +9,28 @@ eta:
 amounts_for: 6 persone (~2 kg)
 ingredients:
   - base:
-      Zucchine/Zucca: 700g
-      Cipolle bianche: 460g
-      Pomodori pelati: 460g (peso sgocciolato)
-      Farina 00: 400g
-      Sale: 20g (q.b.)
-      Olio d'oliva: ~300ml (q.b.)
-      Feta plant-based: 170g
+      - name: Zucchine/Zucca
+        amount: 700
+        unit: g
+      - name: Cipolle bianche
+        amount: 460
+        unit: g
+      - name: Pomodori pelati
+        amount: 460
+        unit: g
+        approx_qty: (peso sgocciolato)
+      - name: Farina 00
+        amount: 400
+        unit: g
+      - name: Sale
+        amount: 20
+        unit: g
+      - name: Olio d'oliva
+        amount: 300
+        unit: ml
+      - name: Feta plant-based
+        amount: 170
+        unit: g
 tools:
   - Ciotola grande
   - Forno

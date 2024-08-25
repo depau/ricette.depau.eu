@@ -10,13 +10,23 @@ eta:
 amounts_for: "6 persone"
 ingredients:
   - base:
-      "Carote": 200g
-      "Aglio": mezzo spicchio
-      "Acqua": 100 ml
-      "Olio d'oliva": 50 ml (~4.5 cucchiai)
-      "Salvia": 5-6 foglie
-      "Sale": q.b.
-      "Pepe nero": q.b.
+    - name: Carote
+      amount: 200
+      unit: g
+    - name: Aglio
+      amount: 0.5
+      unit: spicchio
+    - name: Acqua
+      amount: 100
+      unit: ml
+    - name: Olio d'oliva
+      amount: 50
+      unit: ml
+      approx_qty: "(~4.5 cucchiai)"
+    - name: Salvia
+      approx_qty: 5-6 foglie
+    - name: Sale
+    - name: Pepe nero
 tools:
   - Frullatore
   - Pentola media antiaderente

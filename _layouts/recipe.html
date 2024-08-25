@@ -6,7 +6,7 @@ layout: default
     {% include categories.html categories=page.tags %}
 
     <h1 class="title">{{ page.title }} <span class="plant-based">(vegan <i
-            class="ri-leaf-line"></i>)</span></h1>
+                    class="ri-leaf-line"></i>)</span></h1>
 
     <div class="eta">
         {% include recipe_eta.html recipe=page %}
@@ -32,9 +32,10 @@ layout: default
                         </thead>
                         <tbody>
                         {% for ingredient in ingredient_group[1] %}
+                            {% assign has_paren_prefix = ingredient.notes | split: '(' | first %}
                             <tr>
-                                <td>{{ ingredient[0] | markdownify }}</td>
-                                <td>{{ ingredient[1]| markdownify }}</td>
+                                <td>{{ ingredient | ingredient_name | markdownify }}</td>
+                                <td>{{ ingredient | quantities }}</td>
                             </tr>
                         {% endfor %}
                         </tbody>

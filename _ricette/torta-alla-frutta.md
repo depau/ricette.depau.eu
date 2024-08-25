@@ -9,16 +9,37 @@ eta:
 amounts_for: tortiera da 20cm (6-8 persone)
 ingredients:
   - base:
-      "Frutti": 2 pesche (o mele, mango, etc.)
-      "Latte vegetale a piacere": mezzo bicchiere
-      "Lievito per dolci": 1 bustina
-      "Succo di mandarino": 1 mandarino (opzionale)
-      "Scorza di limone grattugiata": poco meno di mezzo limone
-      "Farina 00": circa 200g (q.b.)
-      "Zucchero": 4 cucchiai (uno per mela + 2)
-      "Burro vegetale": q.b.
-      "Grappa": 1/4 di bicchierino
-      "Sale": un pizzico
+    - name: "Frutti"
+      qty: 2
+      notes: pesche (o mele, mango, etc.)
+    - name: "Latte vegetale"
+      amount: 0.5
+      unit: bicchiere
+      notes: a piacere
+    - name: "Lievito per dolci"
+      amount: 1
+      unit: bustina
+    - name: "Succo di mandarino"
+      qty: 1
+      notes: opzionale
+    - name: "Scorza di limone grattugiata"
+      amount: 0.33
+      unit: limone
+    - name: "Farina 00"
+      amount: 200
+      unit: g
+      approx_qty: q.b.
+    - name: "Zucchero"
+      amount: 4
+      unit: cucchiai
+      notes: uno per mela + 2
+    - name: "Burro vegetale"
+      approx_qty: q.b.
+    - name: "Grappa"
+      amount: 0.25
+      unit: bicchierino
+    - name: "Sale"
+      approx_qty: un pizzico
 tools:
   - Tortiera da 20cm
   - Ciotola

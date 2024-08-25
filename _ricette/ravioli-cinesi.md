@@ -9,17 +9,24 @@ eta:
 amounts_for: "Da definire meglio"
 ingredients:
   - base:
-      Farina 00: un po'
-      Sale: un pizzico
-      Acqua: q.b.
+    - name: Farina 00
+      approx_qty: un po'
+    - name: Sale
+      approx_qty: un pizzico
+    - name: Acqua
   - Ripieno:
-      Carne macinata finta: un po'
-      Cavolo cappuccio: poco
-      Cipollotto fresco: poco, opzionale
-      Salsa di soia: q.b.
-      Sale: q.b.
+    - name: Carne macinata finta
+      approx_qty: un po'
+    - name: Cavolo cappuccio
+      approx_qty: poco
+    - name: Cipollotto fresco
+      approx_qty: poco
+      notes: opzionale
+    - name: Salsa di soia
+    - name: Sale
   - Cottura:
-      Olio (qualsiasi): un filo
+    - name: Olio (qualsiasi)
+      approx_qty: un filo
 tools:
   - Due ciotole
   - Pellicola
