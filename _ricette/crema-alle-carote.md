@@ -6,7 +6,7 @@ tags:
 eta:
   preparation: 5m
   cooking: 15m
-  cooling: 45m
+  resting: 45m
 amounts_for: "6 persone"
 ingredients:
   - base:

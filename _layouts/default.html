@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css"
           href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    {% if site.cookies %}
     <script>
         window.addEventListener("load", function () {
             window.cookieconsent.initialise({
@@ -53,13 +54,14 @@
                 "theme": "edgeless",
                 "position": "bottom-right",
                 "content": {
-                    "message": "Questo sito utilizza i cookies per analisi del traffico anonimizzata.",
-                    "link": "Cookie policy and opt-out",
-                    "href": "https://depau.eu/cookies"
+                    "message": "{% str site_uses_cookies %}",
+                    "link": "{% str cookie_policy %}",
+                    "href": "{{ site.cookies_url }}"
                 }
             })
         });
     </script>
+    {% endif %}
 </head>
 <body>
 <div class="wrapper">
@@ -70,7 +72,9 @@
         <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}/"><i class="ri-restaurant-line"></i> {{ site.title }}</a>
         <ul id="navlist" class="alignable pull-right navbar-ul">
             {% for x in site.nav %}
-                {% if x.name == "Categorie" %}
+                <!-- check whether it ends with site.categories_page -->
+                {% assign is_category_check = x.link | split: "/" | last %}
+                {% if is_category_check == site.categories_page %}
                     <li class="alignable pull-left nav-list fix-damn-position"><a href="{{ x.link }}">{{ x.name }}</a>
                 {% else %}
                     <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>

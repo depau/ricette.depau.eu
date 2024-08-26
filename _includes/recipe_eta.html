@@ -2,17 +2,17 @@
     {% assign components = "" | split: "" %}
 
     {% if include.recipe.eta.preparation %}
-        {% assign prep = "<strong>Preparazione:</strong> " | append: include.recipe.eta.preparation %}
+        {% assign prep = "<strong>" | append: site.strings.preparation | append: ":</strong> " | append: include.recipe.eta.preparation %}
         {% assign components = components | push: prep %}
     {% endif %}
 
     {% if include.recipe.eta.cooking %}
-        {% assign cook = "<strong>Cottura:</strong> " | append: include.recipe.eta.cooking %}
+        {% assign cook = "<strong>" | append: site.strings.cooking | append: ":</strong> " | append: include.recipe.eta.cooking %}
         {% assign components = components | push: cook %}
     {% endif %}
 
-    {% if include.recipe.eta.cooling %}
-        {% assign cool = "<strong>Raffreddamento:</strong> " | append: include.recipe.eta.cooling %}
+    {% if include.recipe.eta.resting %}
+        {% assign cool = "<strong>" | append: site.strings.resting | append: ":</strong> " | append: include.recipe.eta.resting %}
         {% assign components = components | push: cool %}
     {% endif %}
 

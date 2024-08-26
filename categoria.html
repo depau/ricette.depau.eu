@@ -3,7 +3,7 @@ layout: default
 title: Categorie
 ---
 
-<h1 class="title">Tutte le categorie</h1>
+<h1 class="title">{% str all_categories %}</h1>
 
 {% if site.recipes_under_categories %}
 {% assign htag = "h3" %}
@@ -22,7 +22,7 @@ title: Categorie
     {% if tag.pagination_info.curr_page != 1 %}
       {% continue %}
     {% endif %}
-    <{{ htag }}><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/categoria/{{ tag.tag }}">{{ tag.title }}</a></{{ htag }}>
+    <{{ htag }}><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/{{ site.categories_page }}/{{ tag.tag }}">{{ tag.title }}</a></{{ htag }}>
     {% if site.recipes_under_categories %}
     <ul>
       {% assign category_posts = site.ricette | where: "tags", tag.tag | sort: "title" %}

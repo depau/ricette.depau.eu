@@ -12,7 +12,7 @@
         </div>
 
         <div class="ingredients-short">
-            <strong> Ingredienti:</strong>
+            <strong> {% str ingredients %}:</strong>
             <ul>
                 {% for ingredient_group_dict in recipe.ingredients -%}
                     {% for ingredient_group in ingredient_group_dict -%}

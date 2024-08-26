@@ -43,6 +43,7 @@ collections:
     output: true
 
 recipes_under_categories: true
+categories_page: categoria
 
 kramdown:
   input: GFM
@@ -68,3 +69,25 @@ pagination:
   trail:
     before: 2
     after: 2
+
+strings:
+  site_uses_cookies: "Questo sito utilizza i cookies per analisi del traffico anonimizzata."
+  cookie_policy: "Cookie policy and opt-out"
+
+  category: "Categoria"
+  categories: "Categorie"
+  all_categories: "Tutte le categorie"
+  recipes: "Ricette"
+
+  ingredients: "Ingredienti"
+  quantity: "Quantità"
+  tools: "Attrezzatura"
+
+  preparation: "Preparazione"
+  cooking: "Cottura"
+  resting: "Riposo"
+
+  first_page: "Prima pagina"
+  last_page: "Ultima pagina"
+  next_page: "Pagina successiva"
+  previous_page: "Pagina precedente"

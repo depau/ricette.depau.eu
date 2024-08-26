@@ -4,9 +4,9 @@
 
       {% if paginator.page > 1 %}
         <a href="{{ paginator.first_page_path | prepend: site.baseurl }}"
-           title="Prima pagina">«</a> |
+           title="{% str first_page %}">«</a> |
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-           title="Pagina precedente">‹</a> |
+           title="{% str previous_page %}">‹</a> |
       {% endif %}
       {% for trail in paginator.page_trail %}
         <a {% if page.url == trail.path %}class="selected"{% endif %} href="{{ trail.path | prepend: site.baseurl }}"
@@ -15,20 +15,20 @@
       {% if paginator.page < paginator.last_page %}
         |
         <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-           title="Pagina successiva">›</a> |
+           title="{% str next_page %}">›</a> |
         <a href="{{ paginator.last_page_path | prepend: site.baseurl }}"
-           title="Ultima pagina">»</a>
+           title="{% str last_page %}">»</a>
       {% endif %}
 
     {% else %}
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Pagina precedente</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">{% str previous_page %}</a>
       {% endif %}
       {% if paginator.previous_page and paginator.next_page %}
         &bullet;
       {% endif %}
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Pagina successiva</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">{% str next_page %}</a>
       {% endif %}
     {% endif %}
   {% endif %}

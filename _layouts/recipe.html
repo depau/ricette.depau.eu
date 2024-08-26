@@ -17,7 +17,6 @@ layout: default
 
     <div class="requirements-row flex-row">
         <div class="ingredients flex-col">
-            <!-- {{ page.ingredients | jsonify }} -->
             {% for ingredient_group_dict in page.ingredients %}
                 {% for ingredient_group in ingredient_group_dict %}
                     {% unless ingredient_group[0] == "base" %}
@@ -26,8 +25,8 @@ layout: default
                     <table>
                         <thead>
                         <tr>
-                            <th>Ingredienti</th>
-                            <th>Quantità</th>
+                            <th>{% str ingredients %}</th>
+                            <th>{% str quantity %}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -47,7 +46,7 @@ layout: default
             <table>
                 <thead>
                 <tr>
-                    <th>Attrezzatura</th>
+                    <th>{% str tools %}</th>
                 </tr>
                 </thead>
                 <tbody>
