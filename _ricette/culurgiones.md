@@ -4,7 +4,7 @@ title: Culurgiones Veg
 tags:
   - sardegna
 images:
-  - /images/culurgiones/culurgiones.jpg
+  - /assets/images/culurgiones/culurgiones.jpg
 eta:
   preparation: 4h
   cooking: 15m

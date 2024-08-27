@@ -2,8 +2,8 @@
 layout: recipe
 title: "Anguli 'e corcoriga"
 images:
-  - /images/anguli/anguli-pezzetti.jpg
-  - /images/anguli/anguli-teglia.jpg
+  - /assets/images/anguli/anguli-pezzetti.jpg
+  - /assets/images/anguli/anguli-teglia.jpg
 tags:
   - sardegna
 eta:

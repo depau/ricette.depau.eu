@@ -4,7 +4,7 @@ title: "Torta alla frutta"
 tags:
   - dolci
 images:
-  - /images/torta-alla-frutta/torta-pesche.jpg
+  - /assets/images/torta-alla-frutta/torta-pesche.jpg
 eta:
   preparation: 20m
   cooking: 50m

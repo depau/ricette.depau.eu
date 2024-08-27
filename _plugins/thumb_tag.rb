@@ -79,10 +79,10 @@ module Jekyll
       image_path = @params["image"].render(context)
       size = @params["size"].render(context).to_i
 
-      src_path = File.join("assets", image_path)
-      dest_path = File.join("assets/thumbs", size.to_s, image_path)
+      src_path = image_path
+      dest_path = File.join("thumbs", size.to_s, image_path)
 
-      abs_src_path = File.join(site.source, "assets", image_path)
+      abs_src_path = File.join(site.source, image_path)
       raise "Image file not found: #{src_path}" unless File.exist?(abs_src_path)
 
       $_thumbs.append([src_path, dest_path, size])
