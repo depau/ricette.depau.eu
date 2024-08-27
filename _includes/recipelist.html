@@ -1,27 +1,37 @@
 {% for recipe in include.recipes %}
-    <article class="list-item">
-        <h1><a href="{{ site.baseurl }}{{ recipe.url }}">{{ recipe.title }}</a></h1>
-        <div>
-            {% include recipe_eta.html recipe=recipe %}
-        </div>
-        <div>
-            <i class="ri-scales-2-line"></i> {{ recipe.amounts_for }}
-        </div>
-        <div>
-            {% include categories.html categories=recipe.tags %}
-        </div>
+  <article class="list-item recipe-entry">
+    <div class="recipe-text">
+      <h1><a href="{{ site.baseurl }}{{ recipe.url }}">{{ recipe.title }}</a></h1>
+      <div>
+        {% include recipe_eta.html recipe=recipe %}
+      </div>
+      <div>
+        <i class="ri-scales-2-line"></i> {{ recipe.amounts_for }}
+      </div>
+      <div>
+        {% include categories.html categories=recipe.tags %}
+      </div>
 
-        <div class="ingredients-short">
-            <strong> {% str ingredients %}:</strong>
-            <ul>
-                {% for ingredient_group_dict in recipe.ingredients -%}
-                    {% for ingredient_group in ingredient_group_dict -%}
-                        {% for ingredient in ingredient_group[1] -%}
-                            <li>{{ ingredient.name }}</li>
-                        {%- endfor %}
-                    {%- endfor %}
-                {%- endfor %}
-            </ul>
-        </div>
-    </article>
+      <div class="ingredients-short">
+        <strong> {% str ingredients %}:</strong>
+        <ul>
+          {% for ingredient_group_dict in recipe.ingredients -%}
+            {% for ingredient_group in ingredient_group_dict -%}
+              {% for ingredient in ingredient_group[1] -%}
+                <li>{{ ingredient.name }}</li>
+              {%- endfor %}
+            {%- endfor %}
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% if recipe.images %}
+      <div class="recipe-image">
+        <a href="{{ site.baseurl }}{{ recipe.url }}">
+          <img src="{% thumb image: recipe.images[0], size: 600 %}" alt="{{ recipe.title }}">
+        </a>
+      </div>
+    {% endif %}
+  </article>
 {% endfor %}

@@ -80,6 +80,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_magick (5.0.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -176,6 +177,7 @@ DEPENDENCIES
   jekyll-paginate-v2
   jekyll-seo-tag
   jekyll-sitemap
+  mini_magick (~> 5.0)
 
 BUNDLED WITH
    2.5.11

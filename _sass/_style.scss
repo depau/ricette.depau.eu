@@ -398,5 +398,50 @@ h1 {
   }
 }
 
+.recipe-entry {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap-reverse;
+  }
+
+  .recipe-text h1 {
+    margin: 0;
+  }
+
+  .recipe-image {
+    @media (max-width: 500px) {
+      padding: 10px 0;
+    }
+    @media (min-width: 500px) {
+      padding: 10px;
+    }
+
+    a, a:hover, a:active, a:visited {
+      text-decoration: none;
+      border: none;
+      display: block;
+      line-height: 0;
+    }
+
+    img {
+      @media (max-width: 500px) {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+
+      @media (min-width: 500px) {
+        width: auto;
+        height: 150px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
 @import "typography";
 @import "tables";
