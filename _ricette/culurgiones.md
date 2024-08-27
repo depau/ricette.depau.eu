@@ -11,53 +11,58 @@ eta:
 amounts_for: "5-6 persone"
 ingredients:
   - base:
-    - name: "Patate o fiocchi"
-      amount: 1
-      unit: kg
-    - name: "Provola vegana"
-      amount: 200
-      unit: g
-      notes: "(vedi note)"
-    - name: "Parmigiano vegano"
-      amount: 200
-      unit: g
-      notes: "(vedi note)"
-    - name: "Pecorino vegano"
-      amount: 200
-      unit: g
-      notes: "(vedi note)"
-    - name: "Feta vegana"
-      amount: 200
-      unit: g
-      notes: "(vedi note)"
-    - name: "Olio d'oliva"
-      amount: "100"
-      unit: ml
-      approx_qty: circa
-    - name: "Aglio"
-      amount: 1
-      unit: spicchio
-    - name: "Sale"
-      amount: 0.5
-      unit: cucchiaino
-      approx_qty: (q.b.)
+      - name: "Patate o fiocchi"
+        amount: 1
+        unit: kg
+      - name: "Provola vegana"
+        amount: 200
+        unit: g
+        notes: "(vedi note)"
+      - name: "Parmigiano vegano"
+        amount: 200
+        unit: g
+        notes: "(vedi note)"
+      - name: "Pecorino vegano"
+        amount: 200
+        unit: g
+        notes: "(vedi note)"
+      - name: "Feta vegana"
+        amount: 200
+        unit: g
+        notes: "(vedi note)"
+      - name: "Olio d'oliva"
+        amount: "100"
+        unit: ml
+        approx_qty: circa
+      - name: "Aglio"
+        amount: 1
+        unit: spicchio
+      - name: "Sale"
+        amount: 0.5
+        unit: cucchiaino
+        approx_qty: (q.b.)
   - Sfoglia:
-    - name: "Farina calibrata"
-      amount: 600
-      unit: g
-    - name: "Olio d'oliva"
-      amount: 3
-      unit: cucchiai
-      approx_qty: circa
-    - name: "Sale"
-      amount: 10
-      unit: g
-    - name: "Acqua"
+      - name: "Farina calibrata"
+        amount: 600
+        unit: g
+      - name: "Olio d'oliva"
+        amount: 3
+        unit: cucchiai
+        approx_qty: circa
+      - name: "Sale"
+        amount: 10
+        unit: g
+      - name: "Acqua"
 tools:
   - Ciotola grande
   - Grattugia con fori grossi e piccoli
   - Formina tonda da 8cm o bicchiere
   - Pellicola trasparente
+---
+
+***Nota:** Normalmente i culurgiones non andrebbero chiusi come nella foto, ma purtroppo non ho ancora imparato la
+tecnica tradizionale "a spiga", quindi mi accontento di chiuderli con la forchetta.*
+
 ---
 
 I culurgiones sono un piatto della tradizione sarda, simili ai ravioli, ma con un ripieno di patate e formaggi.
