@@ -2,6 +2,8 @@ print "Loading thumb_tag.rb\n"
 
 require 'mini_magick'
 require 'set'
+require 'in_threads'
+require 'etc'
 
 $_thumbs = Set.new
 
@@ -41,7 +43,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
   source = site.source
   dest = site.dest
 
-  $_thumbs.each do |src_path, dest_path, size|
+  $_thumbs.in_threads(Etc.nprocessors).each do |src_path, dest_path, size|
     original_image_path = File.join(source, src_path)
     raise "File not found: #{original_image_path}" unless File.exist?(original_image_path)
 

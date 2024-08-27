@@ -10,3 +10,4 @@ group :jekyll_plugins do
 end
 
 gem "mini_magick", "~> 5.0"
+gem "in_threads", "~> 1.6"

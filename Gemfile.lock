@@ -43,6 +43,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
+    in_threads (1.6.0)
     jekyll (4.3.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -172,6 +173,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  in_threads (~> 1.6)
   jekyll (~> 4.3)
   jekyll-feed
   jekyll-paginate-v2
