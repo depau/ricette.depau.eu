@@ -2,6 +2,18 @@
 layout: default
 ---
 
+{% if page.images %}
+    <script type="module">
+        import PhotoSwipeLightbox from '{{ site.baseurl }}/assets/vendor/photoswipe/photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#photo-gallery',
+            children: 'a',
+            pswpModule: () => import('{{ site.baseurl }}/assets/vendor/photoswipe/photoswipe.esm.min.js')
+        });
+        lightbox.init();
+    </script>
+{% endif %}
+
 <article class="post">
     {% include categories.html categories=page.tags %}
 
@@ -60,6 +72,14 @@ layout: default
             </table>
         </div>
     </div>
+
+    {% if page.images %}
+    <div id="photo-gallery" class="pswp-gallery pswp-gallery--single-column">
+        {% for image in page.images %}
+            {% photoswipe_img image: image, thumb_size: 600 %}
+        {% endfor %}
+    </div>
+    {% endif %}
 
     <div class="entry">
         {{ content }}

@@ -443,5 +443,32 @@ h1 {
   }
 }
 
+.pswp-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  padding: 10px;
+
+  a {
+    border: none;
+    text-decoration: none;
+    line-height: 0;
+
+    img {
+      transition: max-height 0.3s ease;
+      max-height: 300px;
+
+      @media (max-width: 500px) {
+        max-height: 100px;
+      }
+
+      @media (min-width: 500px) and (max-width: 900px) {
+        max-height: 200px;
+      }
+    }
+  }
+}
+
 @import "typography";
 @import "tables";

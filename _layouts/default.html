@@ -32,6 +32,10 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml"/>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.v }}">
 
+    {% if page.images %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/photoswipe/photoswipe.css">
+    {% endif %}
+
     {% seo title = false %}
 
     {% if site.cookies %}
