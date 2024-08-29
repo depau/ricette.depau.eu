@@ -1,0 +1,107 @@
+<div id="autocomplete"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1.17.4/dist/umd/index.production.js"
+        integrity="sha256-E5VTDZxp0Tq5ayOt9uHzrqqEzXOL5VJl+0QOJSBnn4Q=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script>
+    const {autocomplete} = window['@algolia/autocomplete-js'];
+</script>
+<script type="text/javascript">
+    var _fuse = null;
+    var _fusePromise = null;
+
+    async function getFuse() {
+        const indexUrl = '{{ site.baseurl }}/assets/search_index_{{ include.index }}.json';
+
+        if (_fusePromise != null) {
+            return _fusePromise;
+        }
+
+        if (_fuse == null) {
+            _fusePromise = (async () => {
+                const response = await fetch(indexUrl);
+                const data = await response.json();
+                _fuse = new Fuse(data, {
+                    keys: [
+                        {name: 'title', weight: 0.7},
+                        {name: 'ingredients', weight: 0.3}
+                    ],
+                    includeScore: false,
+                    includeAllMatches: true,
+                    useExtendedSearch: true,
+                    threshold: 0.3,
+                });
+            })();
+            await _fusePromise;
+            _fusePromise = null;
+        }
+
+        return _fuse;
+    }
+
+    async function search(query) {
+        if (query === '') {
+            return;
+        }
+
+        const fuse = await getFuse();
+        return fuse.search(query);
+    }
+
+    autocomplete({
+        container: '#autocomplete',
+        placeholder: '{% str search_recipes %}',
+        getSources() {
+            return [{
+                sourceId: 'recipes',
+                getItems({query}) {
+                    return search(query);
+                },
+                onSelect({item}) {
+                    window.location.href = item.item.url;
+                },
+                templates: {
+                    item({item, html}) {
+                        const i = item.item;
+                        const etaItems = [];
+                        if (i.prepTime) {
+                            etaItems.push(html`<strong>{% str preparation %}:</strong> ${i.prepTime}`);
+                            etaItems.push(html`, `);
+                        }
+                        if (i.cookTime) {
+                            etaItems.push(html`<strong>{% str cooking %}:</strong> ${i.cookTime}`);
+                            etaItems.push(html`, `);
+                        }
+                        if (i.restTime) {
+                            etaItems.push(html`<strong>{% str resting %}:</strong> ${i.restTime}`);
+                            etaItems.push(html`, `);
+                        }
+                        etaItems.pop();
+
+                        const thumbItem = i.thumbnail ? html`<img src="${i.thumbnail}" alt="${i.title}"
+                                                                  class="thumb"/>` : '';
+
+                        return html`
+                            <div class="search-result">
+                                <div class="info">
+                                    <div class="title">${i.title}</div>
+                                    <div class="eta"><i class="ri-time-line"></i> ${etaItems}</div>
+                                    <div class="ingredients"><strong>Ingredients:</strong> ${i.ingredients.join(', ')}
+                                    </div>
+                                </div>
+                                ${thumbItem}
+                            </div>`;
+                    },
+                    noResults() {
+                        return `{% str no_recipes_found %}`;
+                    },
+                },
+            }];
+        },
+        onStateChange({_}) {
+            if (_fuse === null) {
+                getFuse();
+            }
+        },
+    });
+</script>

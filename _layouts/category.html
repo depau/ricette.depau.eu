@@ -8,6 +8,8 @@ layout: default
 
   <h1 class="title">{% str category %}: {{ page.title }}</h1>
 
+  {% include searchbar.html index=page.tag %}
+
   {% include recipelist.html recipes=paginator.posts %}
   {% include paginator.html %}
 </div>

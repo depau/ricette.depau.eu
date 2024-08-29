@@ -91,3 +91,6 @@ strings:
   last_page: "Ultima pagina"
   next_page: "Pagina successiva"
   previous_page: "Pagina precedente"
+
+  search_recipes: "Trova ricette"
+  no_recipes_found: "Nessuna ricetta trovata"

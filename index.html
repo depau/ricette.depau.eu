@@ -18,6 +18,8 @@ pagination:
         </p>
     </section>
 
+    {% include searchbar.html index='root' %}
+
     {% include recipelist.html recipes=paginator.posts %}
     {% include paginator.html %}
 

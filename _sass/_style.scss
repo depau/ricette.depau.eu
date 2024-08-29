@@ -470,5 +470,41 @@ h1 {
   }
 }
 
+#autocomplete {
+  --aa-primary-color-rgb: 204, 127, 71;
+}
+
+.search-result {
+  display: flex;
+  gap: 20px;
+  line-height: 130%;
+  padding: 10px;
+
+  $height: 100px;
+
+  .info {
+    height: 100px;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+    mask-image: linear-gradient(180deg, #000 60%, transparent);
+  }
+
+  img {
+    width: auto;
+    height: $height;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 13pt;
+    font-weight: bold;
+  }
+}
+
+.content video {
+  width: 100%;
+  height: auto;
+}
+
 @import "typography";
 @import "tables";
