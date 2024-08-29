@@ -26,7 +26,7 @@ end
 
 def get_page_data(page)
   {
-    'url' => page.url,
+    'url' => page.site.baseurl + page.url,
     'title' => page.data['title'],
     'thumbnail' => page.data['images'] && gen_thumbnail(page.site, page.data['images'][0], 300) || nil,
     'prepTime' => page.data['eta']['preparation'],
