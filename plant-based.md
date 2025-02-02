@@ -9,9 +9,15 @@ vita che si basa sul rispetto per gli animali non-umani e per l'ambiente. Non ha
 salutare anche se una dieta plant-based risulta spesso significativamente più salutare di una dieta che comprende
 prodotti di origine animale.
 
-Essere vegani non significa solo non mangiare prodotti di origine animale, ma anche non acquistare abiti di origine
-animale, non utilizzare prodotti testati sugli animali, non frequentare luoghi in cui gli animali vengono sfruttati
-(circo, equitazione, zoo, ecc.).
+In generale l'obiettivo di una persona che fa la scelta vegana vuole far sì che, nei limiti del possibile e
+ragionevole, gli animali non-umani non vengano sfruttati e abusati inutilmente.
+
+L'evitare prodotti di origine animale è quindi solo una parte di questa scelta, ed è la più ovvia perché l'uccisione
+e lo smembramento quotidiano di milioni di animali a fini alimentari è la forma di sfruttamento più evidente.
+
+Tuttavia limitare gli abusi sugli animali significa anche non acquistare prodotti di moda di origine animale (ad es.
+scarpe e borse in pelle), non utilizzare prodotti testati sugli animali, non frequentare luoghi in cui gli animali
+vengono sfruttati (ad es. circo, equitazione, zoo, ecc.).
 
 ## Perché mangiare imitazioni quando puoi mangiare il vero?
 
@@ -66,3 +72,11 @@ cosa ha trovato.
 In questo modo può decidere se fuggire immediatamente, inveire contro i vegani con i luoghi comuni e rassenerarsi
 tra i propri traumi non guariti, oppure rassenerarsi e gioire nel non dover perscrutare la lista degli ingredienti
 alla ricerca dell'ingrediente da evitare.
+
+## Ma tanto muoiono lo stesso (ecc...)
+
+In questa pagina non ho intenzione di rispondere a tutti i luoghi comuni e sfatare tutti i miti sul veganismo.
+Cerca su Google o chiedi a ChatGPT. Queste sono solo ricette e a me piacciono. Se non ti vanno bene mangia altro.
+
+Tuttavia, rispondo brevemente: gli animali in macelleria sono già morti. Ma quando tu li compri ne devono essere
+uccisi gli altri per riempire lo spazio rimasto vuoto nel frigo.
