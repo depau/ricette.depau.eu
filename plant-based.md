@@ -64,14 +64,14 @@ anche di condividerle con amici e parenti che le chiedono.
 
 Detto ciò, spero che piacciano anche a te!
 
-## C'è scritto "plant-based" in homepage, perché c'è scritto "vegan" in tutte le pagine? Abbiamo capito!
+## C'è scritto "plant-based" in homepage, perché c'è scritto "vegan" anche in tutte le pagine? Abbiamo capito!
 
 Perché così chi arriva a una ricetta da un motore di ricerca senza passare per la pagina principale sa rapidamente
 cosa ha trovato.
 
-In questo modo può decidere se fuggire immediatamente, inveire contro i vegani con i luoghi comuni e rassenerarsi
-tra i propri traumi non guariti, oppure rassenerarsi e gioire nel non dover perscrutare la lista degli ingredienti
-alla ricerca dell'ingrediente da evitare.
+In questo modo può decidere se fuggire immediatamente, inveire contro i vegani con luoghi comuni e rifugiarsi tra i
+propri traumi non guariti, oppure rasserenarsi e gioire nel non dover perscrutare la lista degli ingredienti alla
+ricerca dell'ingrediente da evitare.
 
 ## Ma tanto muoiono lo stesso (ecc...)
 
