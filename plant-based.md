@@ -5,11 +5,13 @@ permalink: /plant-based/
 ---
 
 La cucina plant-based è una parte fondamentale della scelta vegan, ma non è l'unica. La scelta vegan è una scelta di
-vita che si basa sul rispetto per gli animali, per l'ambiente e per la salute.
+vita che si basa sul rispetto per gli animali non-umani e per l'ambiente. Non ha nulla a che vedere con il mangiare
+salutare anche se una dieta plant-based risulta spesso significativamente più salutare di una dieta che comprende
+prodotti di origine animale.
 
-Essere vegani non significa solo non mangiare prodotti animali, ma anche non acquistare abiti di origine animale, non
-utilizzare prodotti testati sugli animali, non frequentare luoghi in cui gli animali vengono sfruttati (circo,
-equitazione, zoo, ecc.).
+Essere vegani non significa solo non mangiare prodotti di origine animale, ma anche non acquistare abiti di origine
+animale, non utilizzare prodotti testati sugli animali, non frequentare luoghi in cui gli animali vengono sfruttati
+(circo, equitazione, zoo, ecc.).
 
 ## Perché mangiare imitazioni quando puoi mangiare il vero?
 
@@ -18,14 +20,17 @@ Prima di tutto perché ognuno può fare un po' il cazzo che gli pare.
 Oltre a questo, ci sono mille ragioni per cui uno può voler mangiare un'alternativa vegetale a un piatto tradizionale.
 Per esempio:
 
-- Allergie e intolleranze alimentari (es. lattosio, uova)
 - Scelte etiche (es. veganismo)
+- Allergie e intolleranze alimentari (es. lattosio, uova)
 - Scelte ambientali (es. attenzione all'impatto ambientale della produzione di prodotti animali)
 - Scelte di salute (es. riduzione del consumo di grassi saturi, colesterolo, ecc.)
 
-Alla base di queste ragioni non ci sono (generalmente) ragioni di gusto: scegliere di non mangiare un determinato
-alimento perché è contro i propri valori etici, o perché è nocivo per la propria salute, non significa che non si
-apprezzi il suo sapore.
+Alla base di queste ragioni non ci sono (generalmente) ragioni di gusto: se si sceglie di non mangiare un determinato
+alimento perché è contro i propri valori etici, o perché è nocivo per la propria salute, non significa che non ne si
+apprezzi il sapore.
+
+Chi cerca alternative plant-based a ricette comunemente contenenti prodotti di origine animali vuole continuare a
+gustare i sapori a cui si è abituati senza le implicazioni negative delle ricette originali.
 
 ### Ma non è la stessa cosa
 
@@ -42,14 +47,22 @@ Ma vallo a spiegare ai sommelier dei burger surgelati in offerta al supermercato
 
 No.
 
-Sono il primo a sospettare che molte persone che pubblicano ricette plant-based online si siano scottati le papille
+Sono il primo a sospettare che molte persone che pubblicano ricette plant-based online si siano scottate le papille
 gustative con l'olio caldo (non si spiega diversamente come possano essere proposte certe schifezze).
 
 Quello che posso dire è che tutte le ricette che ho deciso di pubblicare mi piacciono parecchio, e sarebbero piaciute
-parecchio anche a me qualche anno fa, quando non ero ancora vegano.
+parecchio anche al me di qualche anno fa che non era ancora vegano.
 
 Questo sito esiste per consentirmi di avere un posto dove appuntare le ricette che più mi piacciono, che mi consenta
-anche di condividerle con amici e parenti.
+anche di condividerle con amici e parenti che le chiedono.
 
 Detto ciò, spero che piacciano anche a te!
 
+## C'è scritto "plant-based" in homepage, perché c'è scritto "vegan" in tutte le pagine? Abbiamo capito!
+
+Perché così chi arriva a una ricetta da un motore di ricerca senza passare per la pagina principale sa rapidamente
+cosa ha trovato.
+
+In questo modo può decidere se fuggire immediatamente, inveire contro i vegani con i luoghi comuni e rassenerarsi
+tra i propri traumi non guariti, oppure rassenerarsi e gioire nel non dover perscrutare la lista degli ingredienti
+alla ricerca dell'ingrediente da evitare.
